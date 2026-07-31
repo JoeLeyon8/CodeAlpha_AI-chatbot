@@ -1,0 +1,67 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("=================================");
+        System.out.println("      AI CHATBOT");
+        System.out.println("Type 'bye' to exit.");
+        System.out.println("=================================");
+
+        while (true) {
+
+            System.out.print("\nYou: ");
+            String input = sc.nextLine().toLowerCase();
+
+            if (input.equals("bye")) {
+                System.out.println("Bot: Goodbye! Have a great day.");
+                break;
+            }
+
+            else if (input.contains("hello") || input.contains("hi")) {
+                System.out.println("Bot: Hello! How can I help you today?");
+            }
+
+            else if (input.contains("how are you")) {
+                System.out.println("Bot: I'm doing great! Thanks for asking.");
+            }
+
+            else if (input.contains("your name")) {
+                System.out.println("Bot: I am a Java AI Chatbot.");
+            }
+
+            else if (input.contains("java")) {
+                System.out.println("Bot: Java is a powerful object-oriented programming language.");
+            }
+
+            else if (input.contains("python")) {
+                System.out.println("Bot: Python is widely used in AI, Data Science, and Web Development.");
+            }
+
+            else if (input.contains("college")) {
+                System.out.println("Bot: Studying consistently is the key to success.");
+            }
+
+            else if (input.contains("time")) {
+                System.out.println("Bot: Sorry, I cannot access the current time.");
+            }
+
+            else if (input.contains("thank")) {
+                System.out.println("Bot: You're welcome!");
+            }
+
+            else if (input.contains("help")) {
+                System.out.println("Bot: You can ask me about Java, Python, greetings, or general questions.");
+            }
+
+            else {
+                System.out.println("Bot: Sorry, I don't understand that. Please try another question.");
+            }
+        }
+
+        sc.close();
+    }
+}
